@@ -7,7 +7,7 @@ do
     Console.WriteLine("       Calculadora        ");
     Console.WriteLine("--------------------------");
     Console.WriteLine("Escolha uma das operções abaixo:");
-    Console.WriteLine("(1) Adição \n(2) Subtração \n(3) Multiplicação \n(4) Divisão");
+    Console.WriteLine("(1) Adição \n(2) Subtração \n(3) Multiplicação \n(4) Divisão \n(0) Sair");
     opcao = Console.ReadLine();
     switch (opcao)
     {
@@ -75,6 +75,9 @@ do
             Console.WriteLine("Pressione Enter para voltar ao menu.");
             Console.ReadLine();
             break;
+        case "0":
+
+            break;
         default:
             Console.WriteLine("--------------------------");
             Console.WriteLine("      Opção inválida!     ");
@@ -83,5 +86,5 @@ do
             Console.ReadLine();
             break;
     }
-} while (opcao != "4");
+} while (opcao != "0");
 Console.WriteLine("Programa finalizado.");
